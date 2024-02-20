@@ -1,6 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
         <title>LandingPage</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,9 +41,9 @@
         <header>
             <a class="logo" href="#"><img class = 'logo' src="https://logo.com/image-cdn/images/kts928pd/production/0901a3528ff52f67b59c3e73f9dc6e8f195f795c-413x410.png?w=1080&q=72" alt="logo"></i></a>
             <ul class = 'main_nav'>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about-section">About Us</a></li>
+                <li><a href="#cafe-section">Coffee</a></li>
+                <li><a href="#sponsors-section">Sponsors</a></li>
             </ul>
             <div class="clearfix"></div>
         <div class="row">
@@ -25,22 +52,22 @@
                 Get Coffee!
             </h1>
             <div class="btn">
-                <a href="#">Tell Me More</a>
-                <a href="#">Join Us</a>
+                <a href="#conclusion-section">Tell Me More</a>
+                <a href="#conclusion-section">Join Us</a>
             </div>     
         </div>
         </header>
 
-        <section class = 'about-section'>
+        <section class = 'about-section' id = 'about-section'>
             <div class="section">
                 <h2>About Us</h2>
                 <p class = 'content'>We serve a range of espresso coffees made from the finest coffee beans, roasted right here in Cape Coral, and our baristas really know their beans. With their superior technical knowledge and a passion for making amazing coffee they will make you the perfect cuppa.</p>
             </div>
         </section>
 
-        <section class = 'cafe-section'>
+        <section class = 'cafe-section' id = 'cafe-section'>
+            <h2>Coffee</h2>
             <div class="row">
-                <h2>Italian Coffee</h2>
                 <div class="cafe">
                     <div class="col span-1-of-4 cafe-pic">
                         <a href="https://vi.wikipedia.org/wiki/Espresso"><img src="https://www.thecoffeecompass.com/wp-content/uploads/img_0953.jpg" 
@@ -66,7 +93,7 @@
             </div>
         </section>
 
-        <section class = 'address-section'>
+        <section class = 'address-section' id = 'address-section'>
             <h2>Address</h2>
             <div class="row">
                 <div class="col span-1-of-3 coffee-shop">
@@ -138,7 +165,7 @@
             </div>
         </section>
 
-        <section class="sponsor-section">
+        <section class="sponsor-section" id = 'sponsors-section'>
             <h2>Sponsors</h2>
             <div class="row">
                 <ul class = 'sponsors clearfix'>
@@ -183,7 +210,7 @@
             </div>
         </section>
 
-        <section class="conclusion">
+        <section class="conclusion" id = 'conclusion-section'>
             <div class="row">
                 <div class="col span-1-of-2">
                     <ul class = 'info'>
