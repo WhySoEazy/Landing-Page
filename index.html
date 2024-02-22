@@ -1,33 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="vendors/script.js" ></script>
         <title>LandingPage</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,7 +15,7 @@ $(document).ready(function(){
     </head>
     <body>
         <header>
-            <a class="logo" href="#"><img class = 'logo' src="https://logo.com/image-cdn/images/kts928pd/production/0901a3528ff52f67b59c3e73f9dc6e8f195f795c-413x410.png?w=1080&q=72" alt="logo"></i></a>
+            <a class="logo" href="#"><img class = 'logo' src="resources/img/logo.png" alt="logo"></i></a>
             <ul class = 'main_nav'>
                 <li><a href="#about-section">About Us</a></li>
                 <li><a href="#cafe-section">Coffee</a></li>
@@ -70,22 +46,22 @@ $(document).ready(function(){
             <div class="row">
                 <div class="cafe">
                     <div class="col span-1-of-4 cafe-pic">
-                        <a href="https://vi.wikipedia.org/wiki/Espresso"><img src="https://www.thecoffeecompass.com/wp-content/uploads/img_0953.jpg" 
+                        <a href="https://vi.wikipedia.org/wiki/Espresso"><img src="resources/img/espresso.jpg" 
                             alt="espresso"></a>
                         <p class = 'picture-title'>Espresso</p>
                     </div>
                     <div class="col span-1-of-4 cafe-pic">
-                        <a href="https://vi.wikipedia.org/wiki/Cappuccino"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Cappuccino_at_Sightglass_Coffee.jpg/800px-Cappuccino_at_Sightglass_Coffee.jpg" 
+                        <a href="https://vi.wikipedia.org/wiki/Cappuccino"><img src="resources/img/cappuccino.jpg" 
                             alt="cappuchino"></a>
                         <p class = 'picture-title'>Cappuccino</p>
                     </div>
                     <div class="col span-1-of-4 cafe-pic">
-                        <a href="https://vi.wikipedia.org/wiki/C%C3%A0_ph%C3%AA_latte"><img src="https://chefjob.vn/wp-content/uploads/2018/07/latte.jpg" 
+                        <a href="https://vi.wikipedia.org/wiki/C%C3%A0_ph%C3%AA_latte"><img src="resources/img/latte.jpg" 
                             alt="latte"></a>
                         <p class = 'picture-title'>Latte</p>
                     </div>
                     <div class="col span-1-of-4 cafe-pic">
-                        <a href="https://vi.wikipedia.org/wiki/Latte_macchiato"><img src="https://cdn.tgdd.vn/Files/2018/05/11/1087830/macchiato-la-gi-cach-uong-macchiato-dung-chuan-201908282106072454.jpg" 
+                        <a href="https://vi.wikipedia.org/wiki/Latte_macchiato"><img src="resources/img/macchiato.jpg" 
                             alt="macchiato"></a>
                         <p class = 'picture-title'>Macchiato</p>
                     </div>
@@ -152,15 +128,15 @@ $(document).ready(function(){
             <div class="row">
                 <div class="col span-1-of-3 quote">
                     <blockquote><i class="fa-solid fa-quote-left"></i>I do not want followers who are righteous, rather I want followers who are too busy doing good that they won’t have time to do bad.</blockquote>
-                    <cite>  <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/11Iyar5749-profile-lubavitcher-rebbe.jpg" alt="Rabbi Menachem Mendel"> Rabbi Menachem Mendel</cite>
+                    <cite>  <img src="resources/img/profile1.jpg" alt="Rabbi Menachem Mendel"> Rabbi Menachem Mendel</cite>
                 </div>
                 <div class="col span-1-of-3 quote">
                     <blockquote><i class="fa-solid fa-quote-left"></i>People often avoid making decisions out of fear of making a mistake. Actually the failure to make decisions is one of life's biggest mistakes.</blockquote>
-                    <cite> <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Rabbi_Noah_Weinberg.jpg" alt="Rabbi Noah Weinberg"> Rabbi Noah Weinberg</cite>
+                    <cite> <img src="resources/img/profile2.jpg" alt="Rabbi Noah Weinberg"> Rabbi Noah Weinberg</cite>
                 </div>
                 <div class="col span-1-of-3 quote">
                     <blockquote><i class="fa-solid fa-quote-left"></i>I do not want followers who are righteous, rather I want followers who are too busy doing good that they won’t have time to do bad.</blockquote>
-                    <cite> <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/11Iyar5749-profile-lubavitcher-rebbe.jpg" alt="Rabbi Menachem Mendel"> Rabbi Menachem Mendel </cite>
+                    <cite> <img src="resources/img/profile1.jpg" alt="Rabbi Menachem Mendel"> Rabbi Menachem Mendel </cite>
                 </div>
             </div>
         </section>
@@ -171,19 +147,19 @@ $(document).ready(function(){
                 <ul class = 'sponsors clearfix'>
                     <li>
                         <figure>
-                            <a href="https://www.highlandscoffee.com.vn/"><img class = 'logo-sponsors' src="https://cdn.haitrieu.com/wp-content/uploads/2022/03/Logo-HighLands-Coffee.png" alt="Highlands Coffee"></a>
+                            <a href="https://www.highlandscoffee.com.vn/"><img class = 'logo-sponsors' src="resources/img/highlands.png" alt="Highlands Coffee"></a>
                             <figcaption>Highlands Coffee</figcaption>
                         </figure>
                     </li>
                     <li>
                         <figure>
-                            <a href="https://thecoffeehouse.com/"><img class = 'logo-sponsors' src="https://cdn.haitrieu.com/wp-content/uploads/2022/03/logo-the-coffee-house.png" alt="The Coffee House"></a>
+                            <a href="https://thecoffeehouse.com/"><img class = 'logo-sponsors' src="resources/img/thecoffeehouse.png" alt="The Coffee House"></a>
                             <figcaption>The Coffee House</figcaption>
                         </figure>
                     </li>
                     <li>
                         <figure>
-                            <a href="https://phuclong.com.vn/"><img class = 'logo-sponsors' src="https://cdn.haitrieu.com/wp-content/uploads/2022/03/logo-phuc-long-coffee-and-tea.png" alt="Phúc Long"></a>
+                            <a href="https://phuclong.com.vn/"><img class = 'logo-sponsors' src="resources/img/phuclong.webp" alt="Phúc Long"></a>
                             <figcaption>Phúc Long</figcaption>
                         </figure>
                     </li>
@@ -191,18 +167,18 @@ $(document).ready(function(){
                 <ul class = 'sponsors clearfix'>
                     <li>
                         <figure>
-                            <a href="https://cafeamazonvn.com/"><img class = 'logo-sponsors' src="https://cdn.haitrieu.com/wp-content/uploads/2022/06/logo-cafe-amazon.png" alt="Café Amazon"></a>                            <figcaption>Café Amazon</figcaption>
+                            <a href="https://cafeamazonvn.com/"><img class = 'logo-sponsors' src="resources/img/amazon.webp" alt="Café Amazon"></a>                            <figcaption>Café Amazon</figcaption>
                         </figure>
                     </li>
                     <li>
                         <figure>
-                            <a href="https://trungnguyenlegend.com/"><img class = 'logo-sponsors' src="https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-Trung-Nguyen.png" alt="Trung Nguyên Legend"></a>
+                            <a href="https://trungnguyenlegend.com/"><img class = 'logo-sponsors' src="resources/img/trungnguyen.png" alt="Trung Nguyên Legend"></a>
                             <figcaption>Trung Nguyên Legend</figcaption>
                         </figure>
                     </li>
                     <li>
                         <figure>
-                            <a href="https://lahacafe.vn/"><img class = 'logo-sponsors' src="https://cdn.haitrieu.com/wp-content/uploads/2022/06/logo-laha-cafe.png" alt="Laha"></a>
+                            <a href="https://lahacafe.vn/"><img class = 'logo-sponsors' src="resources/img/laha.webp" alt="Laha"></a>
                            <figcaption>Laha Café</figcaption>
                         </figure>
                     </li>
@@ -228,8 +204,8 @@ $(document).ready(function(){
                         </li>
                     <ul class="social-media">
                         <li>
-                            <a href="https://www.facebook.com/nguyentriet23/"><i class="fa-brands fa-square-facebook social"></i></a>
-                            <a href="https://www.instagram.com/nguyentriet23/"><i class="fa-brands fa-square-instagram"></i></i></a>
+                            <a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook social"></i></a>
+                            <a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></i></a>
                             <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></i></a>
                             <a href="https://github.com/WhySoEazy"><i class="fa-brands fa-square-github"></i></a>
                         </li>
@@ -273,6 +249,13 @@ $(document).ready(function(){
                 Copyright &copy; 2024 By COFFEEHOLIC TEAM
             </P>
         </footer>
+
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+            crossorigin="anonymous"></script>
+
+        
 
     </body>
 </html>

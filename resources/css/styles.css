@@ -52,7 +52,7 @@ body{
 }
 
 header{
-    background-image: url(https://img.pikbest.com/wp/202403/coffee-mug-3d-render-of-on-pastel-pink-background-with-space-for-text_9824204.jpg!bw700);    
+    background-image: url('../img/background.jpg!bw700');    
     color: black;
     font-size: 30px;
     background-size: cover;
